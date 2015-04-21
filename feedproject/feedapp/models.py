@@ -7,7 +7,7 @@ class Users (models.Model):
     
 
 class Mo_Tweets (models.Model):
-	name = tweets = models.ForeignKey(Users)
-	content = models.CharField(max_length = 150)
-	date = models.DateField()
-	url = models.CharField(max_length = 64)
+    name = models.ForeignKey(Users)
+    content = models.CharField(max_length = 150)
+    date = models.DateField()
+    url = models.CharField(max_length = 64)

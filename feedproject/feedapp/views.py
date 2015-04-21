@@ -9,4 +9,4 @@ def mifeed(request,username):
 	for number in range(5):
 		salida += dicc.entries[number].title + "<br>"
 
-	return HttpResponse()
+	return HttpResponse("<h1>ultimos 5 tweets de " + str(username) + "</h1>" + salida)
